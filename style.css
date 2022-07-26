@@ -1,0 +1,84 @@
+body{
+    background-image: url("index.jpeg");
+}
+
+form{
+    background-color: rgba(255, 0, 119, 0.8);
+    margin: 30px;
+    padding: 20px;
+    color: rgb(123, 255, 0);
+    font-size: 400%;
+    font-weight: bolder;
+    font-family: cursive;
+
+    border-top: 10px dashed rgb(172, 95, 6);
+    border-right: 14px dotted rgb(51, 255, 217);
+    border-left: 7px double rgb(0, 17, 255);
+    border-bottom: 20px dashed rgb(255, 0, 0);
+    border-radius: 24px;
+}
+
+@keyframes garbageAnimation1 {
+    from {margin-left: 0px; transform: rotate(90deg)}
+    to {margin-left: 800px; transform: rotate(630deg);}
+}
+
+@keyframes garbageAnimation2 {
+    0% {margin-left: 0px; background-color: rgb(249, 0, 0); transform: rotate(0deg);}
+    10% {background-color: rgb(241, 249, 0);}
+    20% {background-color: rgb(26, 255, 0);}
+    30% {background-color: rgb(0, 0, 249); transform: rotate(10deg);}
+    50% {background-color: rgb(0, 249, 187);}
+    80% {background-color: rgb(255, 0, 204); transform: rotate(-5deg);}
+    100% {margin-left: 500px; background-color: rgb(126, 0, 135);}
+}
+
+@keyframes garbageAnimation3 {
+    0% {margin-left: 0px; margin-top: 0px; transform: rotate(0deg);}
+    25% {margin-left: 1400px; margin-top: 100px;}
+    50% {margin-left: 800px; margin-top: 200px;}
+    79% {margin-left: 1235px; margin-top: 134px;}
+    100% {margin-left: 357px; margin-top: 383px; transform: rotate(-720deg);}
+}
+
+#garbage1{
+    animation-name: garbageAnimation1;
+    animation-duration: 4.47s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    background-color: rgb(68, 255, 0);
+}
+
+#garbage2{
+    animation-name: garbageAnimation2;
+    animation-duration: 1.02s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#garbage3{
+    animation-name: garbageAnimation3;
+    animation-duration: 6.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    background-color: rgb(205, 255, 250);
+    border: 7px double pink;
+}
+
+#keyboard{
+    font-size: 180%;
+    color: white;
+    font-weight: lighter;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 2em;
+}
